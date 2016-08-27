@@ -109,8 +109,10 @@ a:hover, a:focus, a:active, a:visited {
 
 .hero-header {
 	background: #016cc7;
+	background-image: url("camp.png");
 	min-height: 600px;
 	padding: 5em;
+	background-size: cover;
 	color: #fff;
 }
 .hero-header h1 {

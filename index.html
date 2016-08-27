@@ -60,26 +60,89 @@
         </ul>
       </nav>
       <div class="container-fluid">
+
+<style type="text/css">
+    
+@media (max-width: 768px) {
+  .btn-responsive {
+    padding:2px 4px;
+    font-size:80%;
+    line-height: 1;
+    border-radius:3px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .btn-responsive {
+    padding:4px 9px;
+    font-size:90%;
+    line-height: 1.2;
+  }
+}
+
+
+</style>
+
+
+     <div class="navbar navbar-default navbar-fixed-top" style="top: 0px;">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="img/logo.png" alt="Logo" title=""></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li class="dropdown">
+              <a href="/code/" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/code/bootstrap-dropdown-hover/">Bootstrap Dropdown Hover</a></li>
+                <li class="active"><a href="/code/bootstrap-autohidingnavbar/">Bootstrap Auto-Hiding Navbar</a></li>
+                <li><a href="/code/bootstrap-colorpickersliders/">Bootstrap Color Picker Sliders</a></li>
+                <li><a href="/code/bootstrap-touchspin/">Bootstrap TouchSpin</a></li>
+                <li><a href="/code/jquery-colorpickersliders/">jQuery Color Picker Sliders</a></li>
+                <li><a href="/code/bootstrap-duallistbox/">Bootstrap Duallistbox</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="/tools/" class="dropdown-toggle" data-toggle="dropdown">Testimonials <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/tools/live-less-theme-customizer/">Live LESS Theme Customizer</a></li>
+                <li><a href="/tools/bootstrap-live-customizer/">Bootstrap Live Customizer</a></li>
+                <li><a href="/tools/css-gradient-generator/">Gradient Generator</a></li>
+              </ul>
+            </li>
+            <li><a href="/blog/">Contact Us</a></li>
+            <li><a href="/codepen/">Propose An Event</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+        <div class="vs-social-navbar pull-right">
+          <a id="vs-fb" class="vs-socialicon" target="_blank" href="//facebook.com/virtuosoft"></a>
+          <a id="vs-tw" class="vs-socialicon" target="_blank" href="//twitter.com/virtuosofteu"></a>
+          <a id="vs-gp" class="vs-socialicon" target="_blank" href="//plus.google.com/b/104268674964866105829/104268674964866105829/posts"></a>
+        </div>
+      </div>
+    </div>
+
         <!-- Start: Header -->
 
         <div class="row hero-header" id="home">
           <div class="col-md-7">
             <!-- <img src="img/meetup-logo.png" class="logo"> -->
-            <h1 style="font-size:50px;"><b>Statistical Network Science With Applications</b></h1>
-            <h2 style="color:white;">Attend the most awaited Workshop of Über<span style="color:red;font-weight:bold;">Tech</span> '16</h2>
+            <h1 style="font-size:50px;"><b>Lets code together!</b></h1>
+            <h2 style="color:white;">Be the part of the most exciting and codeful events @<span style="color:red;font-weight:bold;">iO</span>CodeCamp</h2>
             <!-- <h3>to start you up with your business!</h3> -->
-            <h4>26<sup>th</sup> to 27<sup>nd</sup>  August, 2016</h4>
-            <a href="#" class="btn btn-lg btn-red">Next Event!<span class="ti-arrow-right"></span></a>
-             <a href="https://goo.gl/forms/muRP5psZt0B3K69E2" class="btn btn-lg btn-red">Feedback<span class="ti-arrow-right"></span></a>
+            <!-- <h4>26<sup>th</sup> to 27<sup>nd</sup>  August, 2016</h4> -->
+            <a href="#" class="btn btn-lg btn-red btn-responsive">Next Event!<span class="ti-arrow-right"></span></a>
+             <a href="https://goo.gl/forms/muRP5psZt0B3K69E2" class="btn btn-lg btn-red btn-responsive">Feedback<span class="ti-arrow-right"></span></a>
 
           </div>
           <div class="col-md-5 hidden-xs">
-            <img style="
-    width: 400px;
-    height: 300px;
-    /* overflow: hidden; */
-    /* height: inherit; */
-" src="img/1.gif">
+            <!--anything if want in right of header-->
           </div>
         </div>
         <!-- End: Header -->
@@ -499,6 +562,8 @@ Python extensively are Google, the New York Stock Exchange, Industrial Light and
       <script src="js/bootstrap.min.js"></script>
       <script src="js/jquery.easing.min.js"></script>
       <script src="js/scrolling-nav.js"></script>
+      <script src="js/jquery.bootstrap-autohidingnavbar.min.js"></script>
       <script src="js/validator.js"></script>
+      <script>$("div.navbar-fixed-top").autoHidingNavbar();</script>d
     
     </body></html>
